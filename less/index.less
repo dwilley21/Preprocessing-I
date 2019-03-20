@@ -52,8 +52,50 @@ table {
 * {
     box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
+.flex-even-mixin(){
+	display: flex; 
+	justify-content: space-evenly
 }
-
+.center-mixin(){
+	text-align: center;
+}
+html, body {
+	height: 100%;
+}
+.container{
+	width: 100%; 
+	@media only screen and (max-width: 500px) {
+		body{
+		background-color: red;
+		}
+	}
+}
+nav{
+	.flex-even-mixin();
+}
+nav a {
+	text-decoration: none; 
+}
+.sectionDivider{
+	margin: 24px; 
+}
+.aboutMe{
+	
+}
+.skills{
+	
+}
+.skillsList{
+	.flex-even-mixin(); 
+}
+.skillsBox{
+	border: 1px black solid; 
+	padding: 12px; 
+}
+h1{
+	.center-mixin();
+	margin-bottom: 12px; 
+}
+.workSummary{
+	display: flex;
+}
