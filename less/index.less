@@ -61,14 +61,15 @@ table {
 }
 html, body {
 	height: 100%;
+	
+	@media only screen and (max-width: 500px) {
+		body{
+		background-color: red;  
+		}
+	}
 }
 .container{
 	width: 100%; 
-	@media only screen and (max-width: 500px) {
-		body{
-		background-color: red;
-		}
-	}
 }
 nav{
 	.flex-even-mixin();
@@ -98,4 +99,8 @@ h1{
 }
 .workSummary{
 	display: flex;
+	justify-content: flex-start; 
+	h2{
+		// margin-right: 12px; 
+	}
 }
