@@ -52,6 +52,9 @@ table {
 * {
     box-sizing: border-box;
 }
+@primary-color: #767d89;
+@secondary-color: #2754a3;
+@font: 'Roboto', sans-serif;
 .flex-even-mixin(){
 	display: flex; 
 	justify-content: space-evenly
@@ -61,46 +64,67 @@ table {
 }
 html, body {
 	height: 100%;
+	background-color: @primary-color;
+	font-family: @font;
 	
 	@media only screen and (max-width: 500px) {
 		body{
 		background-color: red;  
 		}
 	}
-}
-.container{
-	width: 100%; 
-}
-nav{
-	.flex-even-mixin();
-}
-nav a {
-	text-decoration: none; 
-}
-.sectionDivider{
-	margin: 24px; 
-}
-.aboutMe{
-	
-}
-.skills{
-	
-}
-.skillsList{
-	.flex-even-mixin(); 
-}
-.skillsBox{
-	border: 1px black solid; 
-	padding: 12px; 
-}
-h1{
-	.center-mixin();
-	margin-bottom: 12px; 
-}
-.workSummary{
-	display: flex;
-	justify-content: flex-start; 
-	h2{
-		// margin-right: 12px; 
+	.container{
+		width: 100%; 
+	}
+	nav{
+		.flex-even-mixin();
+	}
+	nav a {
+		text-decoration: none; 
+	}
+	.sectionDivider{
+		margin: 24px; 
+	}
+	.aboutMe{
+		
+	}
+	.skills{
+		
+	}
+	.skillsList{
+		.flex-even-mixin(); 
+	}
+	.skillsBox{
+		border: 1px black solid; 
+		padding: 12px; 
+	}
+	h1{
+		.center-mixin();
+		margin-bottom: 12px; 
+	}
+	.workSummary{
+		display: flex;
+		justify-content: flex-start;  
+		h2{
+			margin-right: 36px; 
+			min-width: 100px;
+			max-width: 100px;
+		}
+	}
+	.contact{
+		
+		button{
+		border-radius: 25px;
+		padding: 20px; 
+		}
+		.button{
+		display: flex;
+		justify-content: center;
+		}
+	}
+	.socials{
+		margin-top: 36px; 
+		display: flex; 
+		justify-content: space-evenly; 
 	}
 }
+

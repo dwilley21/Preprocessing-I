@@ -133,6 +133,8 @@ table {
 html,
 body {
   height: 100%;
+  background-color: #767d89;
+  font-family: 'Roboto', sans-serif;
 }
 @media only screen and (max-width: 500px) {
   html body,
@@ -140,32 +142,62 @@ body {
     background-color: red;
   }
 }
-.container {
+html .container,
+body .container {
   width: 100%;
 }
-nav {
+html nav,
+body nav {
   display: flex;
   justify-content: space-evenly;
 }
-nav a {
+html nav a,
+body nav a {
   text-decoration: none;
 }
-.sectionDivider {
+html .sectionDivider,
+body .sectionDivider {
   margin: 24px;
 }
-.skillsList {
+html .skillsList,
+body .skillsList {
   display: flex;
   justify-content: space-evenly;
 }
-.skillsBox {
+html .skillsBox,
+body .skillsBox {
   border: 1px black solid;
   padding: 12px;
 }
-h1 {
+html h1,
+body h1 {
   text-align: center;
   margin-bottom: 12px;
 }
-.workSummary {
+html .workSummary,
+body .workSummary {
   display: flex;
   justify-content: flex-start;
+}
+html .workSummary h2,
+body .workSummary h2 {
+  margin-right: 36px;
+  min-width: 100px;
+  max-width: 100px;
+}
+html .contact button,
+body .contact button {
+  border-radius: 25px;
+  padding: 20px;
+}
+html .contact .button,
+body .contact .button {
+  display: flex;
+  justify-content: center;
+}
+html .socials,
+body .socials {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-evenly;
 }
