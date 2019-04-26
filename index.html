@@ -7,13 +7,69 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <div>
+      <nav>
+        <a href="#me">About me</a>
+        <a href="#skillz">Skills</a>
+        <a href="#whistory">Work History</a>
+        <a href="#hitMeUp">Contact</a>
+      </nav>
+    </div>
+    <div class="aboutMe sectionDivider">
+      <h1 id="me">About me</h1>
+      <p>I'm a fullstack web developer specializing in Javascript.
+        Located in Kansas City I'm incredibly interested in using technology to helo
+        individuals reach their fitness goals. Outside of technology I enjoy reading, working out, and hiking. 
+      </p>
+    </div>
+    <div class="skills sectionDivider">
+      <h1 id="skillz">Skills</h1>
+      <div class="skillsList">
+        <div class="skillsBox">HTML</div>
+        <div class="skillsBox">CSS</div>
+        <div class="skillsBox">Javascript</div>
+        <div class="skillsBox">Less</div>
+        <div class="skillsBox">Responsive Design</div>
+        <div class="skillsBox">Angular</div>
+      </div>
+    </div>
+    <div class="workHistory sectionDivider">
+      <h1 id="whistory">Work History</h1>
+      <div class="workSummary">
+        <h2>Kravitz</h2>
+        <div>Developed retirement solutions for businesses. Utilizing technology and creative plan design.</div>
+      </div>
+      <div class="workSummary">
+        <h2>Public Storage</h2>
+        <div>Managed inbound hot sales opportunities. Coverted over 60% of sales opportunities.</div>
+      </div>
+      <div class="workSummary">
+        <h2>VRLA Tech</h2>
+        <div>Managed sales opportunities for a growing hardware company. Created and managed a sales team of three to succesfully grow the companies new sales by 55% in one year.</div>
+      </div>
+      <div class="workSummary">
+        <h2>University of Kansas</h2>
+        <div>Attended the University of Kansas and pursued a degree in political science utilizing research techniques to complete assignments.</div>
+      </div>
+    </div>
+    <div class="contact sectionDivider">
+      <div><h1 id="hitMeUp">Get in touch</h1></div>
+      <div class="button"><button>Contact Me</button></div> 
+      <div class="socials">
+        <div>Email</div>
+        <div>Twitter</div>
+        <div>LinkedIn</div> 
+      </div>
+    </div>
+    </div>
 </body>
 </html>

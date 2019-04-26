@@ -1,1 +1,203 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #767d89;
+  font-family: 'Roboto', sans-serif;
+}
+@media only screen and (max-width: 500px) {
+  html body,
+  body body {
+    background-color: red;
+  }
+}
+html .container,
+body .container {
+  width: 100%;
+}
+html nav,
+body nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+html nav a,
+body nav a {
+  text-decoration: none;
+}
+html .sectionDivider,
+body .sectionDivider {
+  margin: 24px;
+}
+html .skillsList,
+body .skillsList {
+  display: flex;
+  justify-content: space-evenly;
+}
+html .skillsBox,
+body .skillsBox {
+  border: 1px black solid;
+  padding: 12px;
+}
+html h1,
+body h1 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+html .workSummary,
+body .workSummary {
+  display: flex;
+  justify-content: flex-start;
+}
+html .workSummary h2,
+body .workSummary h2 {
+  margin-right: 36px;
+  min-width: 100px;
+  max-width: 100px;
+}
+html .contact button,
+body .contact button {
+  border-radius: 25px;
+  padding: 20px;
+}
+html .contact .button,
+body .contact .button {
+  display: flex;
+  justify-content: center;
+}
+html .socials,
+body .socials {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-evenly;
+}
